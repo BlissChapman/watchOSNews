@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5A530451C469A0D0064F985 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A530441C469A0D0064F985 /* AppDelegate.swift */; };
+		A5A530471C469A0D0064F985 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A530461C469A0D0064F985 /* ViewController.swift */; };
+		A5A5304A1C469A0D0064F985 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A530481C469A0D0064F985 /* Main.storyboard */; };
+		A5A5304C1C469A0D0064F985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5A5304B1C469A0D0064F985 /* Assets.xcassets */; };
+		A5A5304F1C469A0D0064F985 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A5304D1C469A0D0064F985 /* LaunchScreen.storyboard */; };
+		A5A530541C469A0D0064F985 /* NewsStreamWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A5A530531C469A0D0064F985 /* NewsStreamWatch WatchKit App.app */; };
+		A5A5305A1C469A0D0064F985 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A530581C469A0D0064F985 /* Interface.storyboard */; };
+		A5A5305C1C469A0D0064F985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5A5305B1C469A0D0064F985 /* Assets.xcassets */; };
+		A5A530631C469A0D0064F985 /* NewsStreamWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A5A530621C469A0D0064F985 /* NewsStreamWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A5A530681C469A0D0064F985 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A530671C469A0D0064F985 /* InterfaceController.swift */; };
+		A5A5306A1C469A0D0064F985 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A530691C469A0D0064F985 /* ExtensionDelegate.swift */; };
+		A5A5306C1C469A0D0064F985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5A5306B1C469A0D0064F985 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5A530551C469A0D0064F985 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5A530391C469A0D0064F985 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5A530521C469A0D0064F985;
+			remoteInfo = "NewsStreamWatch WatchKit App";
+		};
+		A5A530641C469A0D0064F985 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5A530391C469A0D0064F985 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5A530611C469A0D0064F985;
+			remoteInfo = "NewsStreamWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A5A530731C469A0D0064F985 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A5A530631C469A0D0064F985 /* NewsStreamWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5A530771C469A0D0064F985 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A5A530541C469A0D0064F985 /* NewsStreamWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A5A530411C469A0D0064F985 /* NewsStreamWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsStreamWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5A530441C469A0D0064F985 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5A530461C469A0D0064F985 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5A530491C469A0D0064F985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5A5304B1C469A0D0064F985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5A5304E1C469A0D0064F985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5A530501C469A0D0064F985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5A530531C469A0D0064F985 /* NewsStreamWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NewsStreamWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5A530591C469A0D0064F985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A5A5305B1C469A0D0064F985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5A5305D1C469A0D0064F985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5A530621C469A0D0064F985 /* NewsStreamWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "NewsStreamWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5A530671C469A0D0064F985 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A5A530691C469A0D0064F985 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A5A5306B1C469A0D0064F985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5A5306D1C469A0D0064F985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5A5303E1C469A0D0064F985 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5A5305F1C469A0D0064F985 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5A530381C469A0D0064F985 = {
+			isa = PBXGroup;
+			children = (
+				A5A530431C469A0D0064F985 /* NewsStreamWatch */,
+				A5A530571C469A0D0064F985 /* NewsStreamWatch WatchKit App */,
+				A5A530661C469A0D0064F985 /* NewsStreamWatch WatchKit Extension */,
+				A5A530421C469A0D0064F985 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5A530421C469A0D0064F985 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5A530411C469A0D0064F985 /* NewsStreamWatch.app */,
+				A5A530531C469A0D0064F985 /* NewsStreamWatch WatchKit App.app */,
+				A5A530621C469A0D0064F985 /* NewsStreamWatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5A530431C469A0D0064F985 /* NewsStreamWatch */ = {
+			isa = PBXGroup;
+			children = (
+				A5A530441C469A0D0064F985 /* AppDelegate.swift */,
+				A5A530461C469A0D0064F985 /* ViewController.swift */,
+				A5A530481C469A0D0064F985 /* Main.storyboard */,
+				A5A5304B1C469A0D0064F985 /* Assets.xcassets */,
+				A5A5304D1C469A0D0064F985 /* LaunchScreen.storyboard */,
+				A5A530501C469A0D0064F985 /* Info.plist */,
+			);
+			path = NewsStreamWatch;
+			sourceTree = "<group>";
+		};
+		A5A530571C469A0D0064F985 /* NewsStreamWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A5A530581C469A0D0064F985 /* Interface.storyboard */,
+				A5A5305B1C469A0D0064F985 /* Assets.xcassets */,
+				A5A5305D1C469A0D0064F985 /* Info.plist */,
+			);
+			path = "NewsStreamWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		A5A530661C469A0D0064F985 /* NewsStreamWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A5A530671C469A0D0064F985 /* InterfaceController.swift */,
+				A5A530691C469A0D0064F985 /* ExtensionDelegate.swift */,
+				A5A5306B1C469A0D0064F985 /* Assets.xcassets */,
+				A5A5306D1C469A0D0064F985 /* Info.plist */,
+			);
+			path = "NewsStreamWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5A530401C469A0D0064F985 /* NewsStreamWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5A530781C469A0D0064F985 /* Build configuration list for PBXNativeTarget "NewsStreamWatch" */;
+			buildPhases = (
+				A5A5303D1C469A0D0064F985 /* Sources */,
+				A5A5303E1C469A0D0064F985 /* Frameworks */,
+				A5A5303F1C469A0D0064F985 /* Resources */,
+				A5A530771C469A0D0064F985 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5A530561C469A0D0064F985 /* PBXTargetDependency */,
+			);
+			name = NewsStreamWatch;
+			productName = NewsStreamWatch;
+			productReference = A5A530411C469A0D0064F985 /* NewsStreamWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5A530521C469A0D0064F985 /* NewsStreamWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5A530741C469A0D0064F985 /* Build configuration list for PBXNativeTarget "NewsStreamWatch WatchKit App" */;
+			buildPhases = (
+				A5A530511C469A0D0064F985 /* Resources */,
+				A5A530731C469A0D0064F985 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5A530651C469A0D0064F985 /* PBXTargetDependency */,
+			);
+			name = "NewsStreamWatch WatchKit App";
+			productName = "NewsStreamWatch WatchKit App";
+			productReference = A5A530531C469A0D0064F985 /* NewsStreamWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A5A530611C469A0D0064F985 /* NewsStreamWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5A530701C469A0D0064F985 /* Build configuration list for PBXNativeTarget "NewsStreamWatch WatchKit Extension" */;
+			buildPhases = (
+				A5A5305E1C469A0D0064F985 /* Sources */,
+				A5A5305F1C469A0D0064F985 /* Frameworks */,
+				A5A530601C469A0D0064F985 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NewsStreamWatch WatchKit Extension";
+			productName = "NewsStreamWatch WatchKit Extension";
+			productReference = A5A530621C469A0D0064F985 /* NewsStreamWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5A530391C469A0D0064F985 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Bliss Chapman";
+				TargetAttributes = {
+					A5A530401C469A0D0064F985 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					A5A530521C469A0D0064F985 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					A5A530611C469A0D0064F985 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = A5A5303C1C469A0D0064F985 /* Build configuration list for PBXProject "NewsStreamWatch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5A530381C469A0D0064F985;
+			productRefGroup = A5A530421C469A0D0064F985 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5A530401C469A0D0064F985 /* NewsStreamWatch */,
+				A5A530521C469A0D0064F985 /* NewsStreamWatch WatchKit App */,
+				A5A530611C469A0D0064F985 /* NewsStreamWatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5A5303F1C469A0D0064F985 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5A5304F1C469A0D0064F985 /* LaunchScreen.storyboard in Resources */,
+				A5A5304C1C469A0D0064F985 /* Assets.xcassets in Resources */,
+				A5A5304A1C469A0D0064F985 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5A530511C469A0D0064F985 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5A5305C1C469A0D0064F985 /* Assets.xcassets in Resources */,
+				A5A5305A1C469A0D0064F985 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5A530601C469A0D0064F985 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5A5306C1C469A0D0064F985 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5A5303D1C469A0D0064F985 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5A530471C469A0D0064F985 /* ViewController.swift in Sources */,
+				A5A530451C469A0D0064F985 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5A5305E1C469A0D0064F985 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5A5306A1C469A0D0064F985 /* ExtensionDelegate.swift in Sources */,
+				A5A530681C469A0D0064F985 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5A530561C469A0D0064F985 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5A530521C469A0D0064F985 /* NewsStreamWatch WatchKit App */;
+			targetProxy = A5A530551C469A0D0064F985 /* PBXContainerItemProxy */;
+		};
+		A5A530651C469A0D0064F985 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5A530611C469A0D0064F985 /* NewsStreamWatch WatchKit Extension */;
+			targetProxy = A5A530641C469A0D0064F985 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5A530481C469A0D0064F985 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5A530491C469A0D0064F985 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A5A5304D1C469A0D0064F985 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5A5304E1C469A0D0064F985 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A5A530581C469A0D0064F985 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5A530591C469A0D0064F985 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5A5306E1C469A0D0064F985 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5A5306F1C469A0D0064F985 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5A530711C469A0D0064F985 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "NewsStreamWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blissChapman.NewsStreamWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		A5A530721C469A0D0064F985 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "NewsStreamWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blissChapman.NewsStreamWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		A5A530751C469A0D0064F985 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = NewsStreamWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "NewsStreamWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blissChapman.NewsStreamWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		A5A530761C469A0D0064F985 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = NewsStreamWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "NewsStreamWatch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blissChapman.NewsStreamWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		A5A530791C469A0D0064F985 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NewsStreamWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blissChapman.NewsStreamWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A5A5307A1C469A0D0064F985 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NewsStreamWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blissChapman.NewsStreamWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5A5303C1C469A0D0064F985 /* Build configuration list for PBXProject "NewsStreamWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5A5306E1C469A0D0064F985 /* Debug */,
+				A5A5306F1C469A0D0064F985 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5A530701C469A0D0064F985 /* Build configuration list for PBXNativeTarget "NewsStreamWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5A530711C469A0D0064F985 /* Debug */,
+				A5A530721C469A0D0064F985 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A5A530741C469A0D0064F985 /* Build configuration list for PBXNativeTarget "NewsStreamWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5A530751C469A0D0064F985 /* Debug */,
+				A5A530761C469A0D0064F985 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A5A530781C469A0D0064F985 /* Build configuration list for PBXNativeTarget "NewsStreamWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5A530791C469A0D0064F985 /* Debug */,
+				A5A5307A1C469A0D0064F985 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5A530391C469A0D0064F985 /* Project object */;
+}
