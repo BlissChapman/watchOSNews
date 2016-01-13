@@ -11,11 +11,36 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
-
+    
+    @IBOutlet var newsTable: WKInterfaceTable!
+    
+    private var headlines = [String]()
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
         // Configure interface objects here.
+        let news = News()
+        news.fetchTopStories(forSection: News.Section.world) { (fetchResult) -> Void in
+            switch fetchResult {
+            case .Success(let headlines):
+                self.headlines = headlines
+                self.loadTableData()
+            case .Failure(let description):
+                let cancel = WKAlertAction(title: "Cancel", style: .Cancel) {}
+                
+                self.presentAlertControllerWithTitle("Error", message: description, preferredStyle: .Alert, actions: [cancel])
+            }
+        }
+    }
+    
+    private func loadTableData() {
+        newsTable.setNumberOfRows(headlines.count, withRowType: "NewsRowController")
+        
+        for (index, headline) in headlines.enumerate() {
+            let row = newsTable.rowControllerAtIndex(index) as? NewsRowController
+            row?.headlineLabel.setText(headline)
+        }
     }
 
     override func willActivate() {
@@ -29,3 +54,4 @@ class InterfaceController: WKInterfaceController {
     }
 
 }
+

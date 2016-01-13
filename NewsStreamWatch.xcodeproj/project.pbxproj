@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A52CD9911C46AAC100E9377E /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52CD9901C46AAC100E9377E /* News.swift */; };
+		A52CD9921C46B02000E9377E /* NewsRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A5307B1C46A2980064F985 /* NewsRowController.swift */; };
 		A5A530451C469A0D0064F985 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A530441C469A0D0064F985 /* AppDelegate.swift */; };
 		A5A530471C469A0D0064F985 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A530461C469A0D0064F985 /* ViewController.swift */; };
 		A5A5304A1C469A0D0064F985 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A530481C469A0D0064F985 /* Main.storyboard */; };
@@ -64,6 +66,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A52CD9901C46AAC100E9377E /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		A5A530411C469A0D0064F985 /* NewsStreamWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsStreamWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A530441C469A0D0064F985 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5A530461C469A0D0064F985 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +83,7 @@
 		A5A530691C469A0D0064F985 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		A5A5306B1C469A0D0064F985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5A5306D1C469A0D0064F985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5A5307B1C46A2980064F985 /* NewsRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsRowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				A5A530581C469A0D0064F985 /* Interface.storyboard */,
+				A5A5307B1C46A2980064F985 /* NewsRowController.swift */,
 				A5A5305B1C469A0D0064F985 /* Assets.xcassets */,
 				A5A5305D1C469A0D0064F985 /* Info.plist */,
 			);
@@ -147,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				A5A530671C469A0D0064F985 /* InterfaceController.swift */,
+				A52CD9901C46AAC100E9377E /* News.swift */,
 				A5A530691C469A0D0064F985 /* ExtensionDelegate.swift */,
 				A5A5306B1C469A0D0064F985 /* Assets.xcassets */,
 				A5A5306D1C469A0D0064F985 /* Info.plist */,
@@ -295,8 +301,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A52CD9911C46AAC100E9377E /* News.swift in Sources */,
 				A5A5306A1C469A0D0064F985 /* ExtensionDelegate.swift in Sources */,
 				A5A530681C469A0D0064F985 /* InterfaceController.swift in Sources */,
+				A52CD9921C46B02000E9377E /* NewsRowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +535,7 @@
 				A5A530721C469A0D0064F985 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5A530741C469A0D0064F985 /* Build configuration list for PBXNativeTarget "NewsStreamWatch WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +544,7 @@
 				A5A530761C469A0D0064F985 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5A530781C469A0D0064F985 /* Build configuration list for PBXNativeTarget "NewsStreamWatch" */ = {
 			isa = XCConfigurationList;
@@ -543,6 +553,7 @@
 				A5A5307A1C469A0D0064F985 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
