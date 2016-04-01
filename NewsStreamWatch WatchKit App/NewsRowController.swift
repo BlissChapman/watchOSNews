@@ -10,7 +10,7 @@ import Foundation
 import WatchKit
 
 
-class NewsRowController: NSObject {
+final class NewsRowController: NSObject {
     
     @IBOutlet var headlineLabel: WKInterfaceLabel!
     

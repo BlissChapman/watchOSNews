@@ -10,9 +10,9 @@ import WatchKit
 import Foundation
 
 
-class InterfaceController: WKInterfaceController {
+private class InterfaceController: WKInterfaceController {
     
-    @IBOutlet var newsTable: WKInterfaceTable!
+    @IBOutlet private var newsTable: WKInterfaceTable!
     
     private var headlines = [String]()
     
@@ -21,7 +21,7 @@ class InterfaceController: WKInterfaceController {
         
         // Configure interface objects here.
         let news = News()
-        news.fetchTopStories(forSection: News.Section.world) { (fetchResult) -> Void in
+        news.fetchTopStories(forSection: News.Section.world) { (fetchResult) in
             switch fetchResult {
             case .Success(let headlines):
                 self.headlines = headlines
